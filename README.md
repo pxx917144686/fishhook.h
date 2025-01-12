@@ -17,9 +17,8 @@ make
 
 
 
-## 使用方法
+## 使用方法 添加 `fishhook.h`/`fishhook.c`
 
-添加 `fishhook.h`/`fishhook.c` 到项目后
 ```Objective-C
 #import <dlfcn.h>
 
