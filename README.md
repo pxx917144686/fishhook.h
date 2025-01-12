@@ -2,11 +2,6 @@
 修改 iOS 系统库的函数 Fishhook 方法勾子；
 适用于 iOS 和 macOS 开发中的低级调试和符号修改。它支持 动态符号重新绑定，与 DYLD_INTERPOSE 类似；
 
-![Preview](./x/fishhook.png)
-
-
-
-
 ## 克隆仓库
 ```bash
 git clone https://github.com/pxx917144686/fishhook.h.git
