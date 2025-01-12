@@ -1,12 +1,17 @@
 ## fishhook.h
-这是一个 头文件，用于声明 fishhook 提供的接口和函数。它定义了需要在 C 或 Objective-C 中调用的符号。源代码中引入这个文件 #fishhook.h
+这是一个 头文件，用于声明 fishhook 提供的接口和函数。它定义了需要在 C 或 Objective-C 中调用的符号。
+在代码中 #import "fishhook.h"
 
 ## fishhook.c
-这是 源代码文件，它定义了如何通过低层次的符号替换来实现方法交换。这个文件的内容会被编译成一个（.o 文件）
+这是 fishhook 源代码文件，它定义了如何通过低层次的符号替换来实现方法交换。这个文件的内容会被编译成一个（fishhook.o 文件）
 
 ## fishhook.o
-这是一个 目标文件（Object File）它是通过编译 fishhook.c 得到的中间文件。
+它是通过编译 fishhook.c 得到的中间文件（Object File）。
+
 在编译过程中，fishhook.o 会被链接到你的最终应用程序中，提供 fishhook 功能。
+
+Xcode 在 "Build Phases" 中将 fishhook.o 添加到了编译目标（Target）的 "Compile Sources" 和 "Link Binary with Libraries" 部分。Xcode 会自动处理。
+
 
 
 ## 简单解释：用 Fishhook 替换 `open` 函数。
