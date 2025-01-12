@@ -12,9 +12,7 @@ make
 ```
 
 
-## 创建一个简单的 Makefile 来编译
-## 此 Makefile 生成一个静态库文件 libfishhook.a
-
+## 举例：创建一个简单的 Makefile 来编译
 ```bash
 # 设置输出目录为目标位置
 LIBRARY_NAME = libfishhook.a
@@ -31,15 +29,14 @@ all:
 
 clean:
 	rm -f *.o $(LIBRARY_NAME)
-
 ```
+## 执行 make 生成一个静态库文件 libfishhook.a
 
-## 编译 libfishhook.a 之后，将这个库放到 Theos 项目中。或者：~/theos/libfishhook.a
+## 将libfishhook.a 放到项目中 或者：~/theos/libfishhook.a
 
-
-## Makefile 内容中，添加 fishhook 库链接。Theos 在编译过程中就会自动链接 libfishhook.a
+## 项目xxxxxxxxxxx的 Makefile 内容 需要添加 fishhook
 
 ```bash
-Surge_LIBRARIES = fishhook
+xxxxxxxxxxx_LIBRARIES = fishhook
 ```
 
